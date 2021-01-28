@@ -27,6 +27,12 @@ En el procesos se usaron los 8 núcleos pero en la foto solo se alcanzan a ver l
 
 3. Lo que se le ha pedido es: debe modificar la aplicación de manera que cuando hayan transcurrido 5 segundos desde que se inició la ejecución, se detengan todos los hilos y se muestre el número de primos encontrados hasta el momento. Luego, se debe esperar a que el usuario presione ENTER para reanudar la ejecución de los mismo.
 
+Se evidencia como se detienen los hilos a los 5 segundos de su ejecución.
+![Captura4](https://user-images.githubusercontent.com/37603257/106153603-b8287500-614c-11eb-9059-d58c1dea0af8.PNG)
+
+Posteriormente se evidencia que despues de los 5 segundos se le pide al usuario dar enter para seguir con el programa.
+![Captura5](https://user-images.githubusercontent.com/37603257/106153599-b6f74800-614c-11eb-887c-ef20b0460f1f.PNG)
+
 
 
 ### Parte II 
