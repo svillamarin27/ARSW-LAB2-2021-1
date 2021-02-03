@@ -13,7 +13,7 @@ public class MainCanodromo {
 
     private static RegistroLlegada reg = new RegistroLlegada();
 
-    public static void main(String[] args) {
+    public static synchronized void main(String[] args) {
         can = new Canodromo(17, 100);
         galgos = new Galgo[can.getNumCarriles()];
         can.setVisible(true);
@@ -23,7 +23,7 @@ public class MainCanodromo {
                 new ActionListener() {
 
                     @Override
-                    public void actionPerformed(final ActionEvent e) {
+                    public  void actionPerformed(final ActionEvent e) {
 						//como acción, se crea un nuevo hilo que cree los hilos
                         //'galgos', los pone a correr, y luego muestra los resultados.
                         //La acción del botón se realiza en un hilo aparte para evitar
