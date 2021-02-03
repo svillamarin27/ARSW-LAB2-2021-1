@@ -62,6 +62,12 @@ Parte III
     a.  La acción de iniciar la carrera y mostrar los resultados se realiza a partir de la línea 38 de MainCanodromo.
 
     b.  Puede utilizarse el método join() de la clase Thread para sincronizar el hilo que inicia la carrera, con la finalización de los hilos de los galgos.
+    
+    Al utilizar el método join() de la clase Thread se logra sincronizar el hilo que inicia la carrera así mísmo corrigiendo las inconsistencias en los resultados de las carreras.
+    
+    ![image](https://user-images.githubusercontent.com/37603257/106761522-e69dc880-6602-11eb-8cb2-dcdedb1d0e46.png)
+    ![image](https://user-images.githubusercontent.com/37603257/106761895-43997e80-6603-11eb-8028-1e011598f0af.png)
+    ![image](https://user-images.githubusercontent.com/37603257/106761964-5ad86c00-6603-11eb-855a-7b265320834a.png)
 
 2.  Una vez corregido el problema inicial, corra la aplicación varias
     veces, e identifique las inconsistencias en los resultados de las
@@ -69,6 +75,11 @@ Parte III
     podrían salir resultados válidos, pero en otros se pueden presentar
     dichas inconsistencias). A partir de esto, identifique las regiones
     críticas () del programa.
+    
+    Al utilizar el método de synchronized() de la clase Thread se arreglan las inconsistencias que hay con respecto a los multiples resultados de los puestos en la carrera como se evidencia en la foto del punto anterior donde hay varios en el primer puesto.
+    
+    ![image](https://user-images.githubusercontent.com/37603257/106766014-6fb6fe80-6607-11eb-9499-0aa76b8f7a45.png)
+    
 
 3.  Utilice un mecanismo de sincronización para garantizar que a dichas
     regiones críticas sólo acceda un hilo a la vez. Verifique los
