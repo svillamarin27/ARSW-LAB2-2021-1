@@ -84,6 +84,8 @@ Parte III
 3.  Utilice un mecanismo de sincronización para garantizar que a dichas
     regiones críticas sólo acceda un hilo a la vez. Verifique los
     resultados.
+    
+    ![image](https://user-images.githubusercontent.com/50029247/106797919-3f815700-662b-11eb-9804-ab7572a6edd9.png)
 
 4.  Implemente las funcionalidades de pausa y continuar. Con estas,
     cuando se haga clic en ‘Stop’, todos los hilos de los galgos
