@@ -13,7 +13,7 @@ public class MainCanodromo {
 
     private static RegistroLlegada reg = new RegistroLlegada();
 
-    public static synchronized void main(String[] args) {
+    public static void main(String[] args) {
         can = new Canodromo(17, 100);
         galgos = new Galgo[can.getNumCarriles()];
         can.setVisible(true);
