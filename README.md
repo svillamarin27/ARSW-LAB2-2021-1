@@ -86,9 +86,47 @@ Parte III
     resultados.
     
     ![image](https://user-images.githubusercontent.com/50029247/106797919-3f815700-662b-11eb-9804-ab7572a6edd9.png)
+    
+    Con el metodo implementado anteriormente obtenemos los siguientes resultados:
+    
+    ![image](https://user-images.githubusercontent.com/50029247/106801950-524a5a80-6630-11eb-921a-39976a8b169a.png)
 
 4.  Implemente las funcionalidades de pausa y continuar. Con estas,
     cuando se haga clic en ‘Stop’, todos los hilos de los galgos
     deberían dormirse, y cuando se haga clic en ‘Continue’ los mismos
     deberían despertarse y continuar con la carrera. Diseñe una solución que permita hacer esto utilizando los mecanismos de sincronización con las primitivas de los Locks provistos por el lenguaje (wait y notifyAll).
+    
+    Para esto primero realizaremos un metodo get que le retorne el registro de llegada a la clase Galgo.java
+    
+    ![image](https://user-images.githubusercontent.com/50029247/106801425-bddff800-662f-11eb-8513-d09a09ee2303.png)
+    
+    En la clase Galgo.java realizaremos dos metodos, uno que asigne la variable isPause (Esta pausado) un valor booleando y el metodo pause para detener el programa.
+    
+    ![image](https://user-images.githubusercontent.com/50029247/106801670-08617480-6630-11eb-9a49-22de795e6ae0.png)
+    
+    Despues añadimos un condicional al metodo corra de la clase Galgo.java utilizando los metodos que implementamos anteriorment, ya podremos parar y reanudar la ejecución antes de que finalice.
+    
+    ![image](https://user-images.githubusercontent.com/50029247/106804704-bfabba80-6633-11eb-9398-9e68f9633f91.png)
+    
+    Asi se ve nuestro programa despues de iniciar y haberlo pausado:
+    
+    ![image](https://user-images.githubusercontent.com/50029247/106804995-1e713400-6634-11eb-8fdd-cf27741ab9e8.png)
+
+    Esta seria la ejecución final después de interrumpir varias veces la ejecución:
+    
+    ![image](https://user-images.githubusercontent.com/50029247/106805271-80ca3480-6634-11eb-9d5d-e05c390d7cca.png)
+
+    Y la salida por consola:
+    
+    ![image](https://user-images.githubusercontent.com/50029247/106805360-99d2e580-6634-11eb-93f4-96c49a5e2cdd.png)
+
+    ![image](https://user-images.githubusercontent.com/50029247/106805880-3eedbe00-6635-11eb-8ec2-8c996b5934bf.png)
+
+
+    
+    
+    
+    
+
+    
 
